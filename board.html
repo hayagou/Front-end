@@ -19,39 +19,70 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row col-xs-offset-1">
+    <div class="container">
+        <!-- <div class="row col-xs-offset-1">
             <H1>게시판</H1>
-        </div>
-        <div class="row "></div>
+        </div> -->
         <table class="table table-hover">
+            <caption>
+                <h1>게시판</h1>
+            </caption>
             <thead>
-                <tr>
-                    <th scope="col">번호</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col">작성일</th>
-                    <th scope="col">조회수</th>
-                    <!-- <th scope="col-md-1">번호</th>
-                    <th scope="col-md-1">제목</th>
-                    <th scope="col-md-2">작성자</th>
-                    <th scope="col-md-2">작성일</th>
-                    <th scope="col-md-1">조회수</th> -->
+                <tr class="">
+                    <th class="col-md-1.5 " scope="col">번호</th>
+                    <th class="col-md-5 " scope="col">제목</th>
+                    <th class="col-md-2 " scope="col">작성자</th>
+                    <th class="col-md-2 " scope="col">작성일</th>
+                    <th class="col-md-1.5 " scope="col">조회수</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1234</th>
+                    <th scope="col">1234</th>
                     <td>Column content</td>
-                    <td>Column content</td>
+                    <td>bb</td>
                     <td>2020.03.23</td>
                     <td>1</td>
                 </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td>tt</td>
+                    <td>aasdasd</td>
+                    <td>2020.03.23</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>12312</td>
+                    <td>zzz</td>
+                    <td>2020.03.23</td>
+                    <td>1123123</td>
+                </tr>
             </tbody>
         </table>
+
+        <hr width="10px" />
+        <hr width="10px" />
+
+        <div class="list_footer">
+            <form class="form-inline">
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>제목</option>
+                        <option>작성자</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Enter Search Terms...">
+                </div>
+                <button type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+                <a href="#" class="btn btn-info pull-right col-md-1">글쓰기</a>
+
+            </form>
+        </div>
     </div>
 
-    <div class="text-center">
+    <div class="text-center" style="margin-top: 5rem;">
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <li class="disabled">
@@ -73,7 +104,6 @@
                 </li>
             </ul>
         </nav>
-
     </div>
 </body>
 
